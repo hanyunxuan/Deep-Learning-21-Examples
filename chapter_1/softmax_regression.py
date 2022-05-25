@@ -4,6 +4,9 @@
 import tensorflow as tf
 # 导入MNIST教学的模块
 from tensorflow.examples.tutorials.mnist import input_data
+import os
+
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 # 与之前一样，读入MNIST数据
 mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 
